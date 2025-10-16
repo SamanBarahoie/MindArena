@@ -5,9 +5,7 @@ import threading
 import time
 from ai_brain import AIBrain  # make sure this exists
 
-# -------------------------
-# Main UI class
-# -------------------------
+
 class MindArena:
     def __init__(self):
         self.window = tk.Tk()
@@ -176,3 +174,4 @@ class MindArena:
 # ---- entrypoint
 if __name__ == "__main__":
     MindArena().run()
+
