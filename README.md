@@ -1,83 +1,77 @@
 
-# MindArena: AI Tic-Tac-Toe Battle
+# MindArena: AI Model Showdown — GPT-4o-mini vs Gemini-1.5-flash
 
-[![](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![](https://img.shields.io/github/v/release/SamanBarahoie/MindArena?color=green)](https://github.com/SamanBarahoie/MindArena/releases)
-[![](https://img.shields.io/github/actions/workflow/status/SamanBarahoie/MindArena/ci.yml?branch=main)](https://github.com/SamanBarahoie/MindArena/actions)
-[![](https://img.shields.io/badge/python-3.10+-yellow.svg)](https://www.python.org/downloads/)
-[![](https://img.shields.io/badge/AI-Model_Comparison-orange.svg)](https://yourprojectdomain.com/docs)
-
-## Screenshot
-
-
-<image-card alt="AI Battle Screenshot" src="battle.gif"></image-card>
-
-
-Optional badges below the screenshot (customize URLs as needed): <img src="https://img.shields.io/badge/demo-live-blueviolet.svg" alt=""> <img src="https://img.shields.io/badge/docs-Overview-orange.svg" alt=""> <img src="https://img.shields.io/github/stars/YourUsername/MindArena?style=social" alt="">
+[![](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![](https://img.shields.io/badge/python-3.10+-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![](https://img.shields.io/badge/UI-Tkinter-00599C.svg?style=for-the-badge&logo=windowsterminal&logoColor=white)](#)
+[![](https://img.shields.io/badge/AI_Models-GPT4o__mini_&_Gemini__1.5__flash-ff6f00.svg?style=for-the-badge&logo=googlecloud&logoColor=white)](#)
+[![](https://img.shields.io/badge/threading-real_time_moves-00B8A9.svg?style=for-the-badge)](#)
 
 ---
 
-## Overview
+## AI Battle Visualization
 
-**MindArena** is an AI-driven Tic-Tac-Toe arena designed to benchmark and visualize real-time decision-making between two leading models — **GPT-4o-mini** and **Gemini-1.5-flash**.
-The system provides an interactive interface that highlights model reasoning speed, move precision, and strategic behavior in a controlled environment.
+
+<img alt="AI Battle Visualization" src="battle.gif"></img>
 
 ---
 
-## Motivation
+## Project Insight
 
-The project was built to explore how modern large language models handle **symbolic reasoning and deterministic games**.
-By creating a neutral and repeatable environment, MindArena demonstrates the competitive and analytical capabilities of AI models in lightweight, interpretable settings.
+**MindArena** is a real-time AI-versus-AI simulation where **GPT-4o-mini** and **Gemini-1.5-flash** compete in a logic-driven Tic-Tac-Toe battle.
+The project explores **model reasoning, speed, and tactical awareness** under identical prompt conditions, offering a transparent look into LLM strategic behavior.
+
+---
+
+## Why This Project Exists
+
+The idea behind MindArena was to move beyond text generation and visualize **strategic decision-making in constrained environments**.
+Tic-Tac-Toe provides a clean, interpretable framework to study **how models reason, adapt, and optimize** within deterministic rules.
 
 ---
 
 ## Architecture & Technologies
 
-The system employs a simple but modular design to allow model substitution and scalable comparison.
-
-| Component  | Technology                | Purpose                                                         |
-| ---------- | ------------------------- | --------------------------------------------------------------- |
-| Interface  | Tkinter                   | Visualizes the game and player turns.                           |
-| AI Engine  | Python Threads            | Manages real-time model decisions.                              |
-| AI Bridge  | `ai_brain.py`             | Unifies communication between GPT-4o-mini and Gemini-1.5-flash. |
-| Logic Core | Custom Tic-Tac-Toe Engine | Ensures fairness and deterministic rule enforcement.            |
+| Component    | Technology           | Purpose                                           |
+| ------------ | -------------------- | ------------------------------------------------- |
+| GUI          | Tkinter              | Displays the interactive board and move tracking. |
+| Logic Engine | Custom Python Module | Enforces rules and evaluates outcomes.            |
+| AI Bridge    | `ai_brain.py`        | Handles model requests and response parsing.      |
+| Concurrency  | Threading            | Simulates simultaneous AI decisions.              |
+| Environment  | Python 3.10+         | Core runtime for the experiment.                  |
 
 ---
 
-## Installation & Usage
+## Run It Locally
 
-Clone and set up the project locally:
+Clone and start the project in your environment:
 
 ```bash
 git clone https://github.com/YourUsername/MindArena.git
 cd MindArena
-python3 Tic-Tac-Toe.py
+python3 main.py
 ```
 
-Ensure you have valid API keys (if applicable) for both models defined in `config.py`.
+If using API-based models, configure credentials inside `config.py`.
 
 ---
 
-## Outcomes & Impact
+## Key Takeaways
 
-MindArena highlights:
+* Real-time, neutral AI competition with equal prompts.
+* Visual demonstration of reasoning speed and move quality.
+* Simple framework for benchmarking conversational or logic-based AI models.
 
-* Consistent model benchmarking under equal prompt conditions.
-* Real-time move tracking with live win/draw statistics.
-* A reproducible setup for small-scale AI competition experiments.
-
-The results showed **GPT-4o-mini** performing with greater consistency and tactical efficiency compared to Gemini-1.5-flash.
+Initial experiments showed **GPT-4o-mini** achieving higher consistency in tactical responses compared to **Gemini-1.5-flash**.
 
 ---
 
-## Future Enhancements
+## Roadmap
 
-Planned improvements include:
-
-* Web-based dashboard for multi-model comparison.
-* Support for turn-based strategy games beyond Tic-Tac-Toe.
-* Integration with OpenAI and Google API monitoring for deeper metrics.
+* Web dashboard for model analytics and replay visualization.
+* Support for additional strategy games (e.g., Connect-Four, Gomoku).
+* API layer for automated AI tournaments and benchmarking.
 
 ---
 
-**Keywords:** AI, Model Evaluation, GPT-4o-mini, Gemini-1.5-flash, Python, Tic-Tac-Toe, Benchmarking, Strategy Simulation
+**Keywords:** AI Benchmarking, Model Evaluation, GPT-4o-mini, Gemini-1.5-flash, Python, Threading, Tkinter, LLM Strategy, Real-time Simulation
